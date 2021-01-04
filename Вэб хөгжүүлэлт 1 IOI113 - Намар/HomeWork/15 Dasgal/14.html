@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot</title>
+    <style>
+        .Robot img{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Robot"><img src="Robot.png" alt=""></div>
+    <script>
+        let Robot = document.querySelector('.Robot');
+let moveBy = 10;
+ 
+window.addEventListener('load', () => {
+    Robot.style.position = 'absolute';
+    Robot.style.left = 0;
+    Robot.style.top = 0;
+});
+ 
+//  Arrow "LEFT, RIGHT, UP, DOWN" аас гадна "W, D, S, A" ашиглаж болно.
+window.addEventListener('keyup', (e) => {
+    switch (e.key) {
+        case 'ArrowLeft':
+            Robot.style.left = parseInt(Robot.style.left) - moveBy + 'px';
+            break;
+        case 'ArrowRight':
+            Robot.style.left = parseInt(Robot.style.left) + moveBy + 'px';
+            break;
+        case 'ArrowUp':
+            Robot.style.top = parseInt(Robot.style.top) - moveBy + 'px';
+            break;
+        case 'ArrowDown':
+            Robot.style.top = parseInt(Robot.style.top) + moveBy + 'px';
+            break;
+        case 'a':
+            Robot.style.left = parseInt(Robot.style.left) - moveBy + 'px';
+            break;
+        case 'd':
+            Robot.style.left = parseInt(Robot.style.left) + moveBy + 'px';
+            break;
+        case 'w':
+            Robot.style.top = parseInt(Robot.style.top) - moveBy + 'px';
+            break;
+        case 's':
+            Robot.style.top = parseInt(Robot.style.top) + moveBy + 'px';
+            break;
+    }
+});
+    </script>
+</body>
+</html>

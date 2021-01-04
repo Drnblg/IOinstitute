@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function UpDownCase(){
+        var x = prompt('utga oruulna uu')
+        var y = x
+        var z = []
+        for (j = 0; j < y.length; j++){
+            if (y[j] == y[j].toLowerCase()){
+                z[j] = y[j].toUpperCase();
+            }
+            else{
+                z[j] = y[j].toLowerCase();
+            }
+        }
+        alert(z.join(""))
+    }
+    UpDownCase()
+    </script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+.content2 {
+  display: grid;
+}
+.turul {
+  display: grid;
+  grid-area: turul;
+  text-align: center;
+  padding: 30px;
+}
+.medeelel {
+  display: grid;
+  grid-template-areas:
+    "turul turul"
+    "card1 card2"
+    "card3 card4";
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-top: 60px;
+  position: relative;
+}
+.medeelel .card1 {
+  grid-area: card1;
+  position: relative;
+  max-width: 325px;
+  height: 220px;
+  background: #fff;
+  margin: 30px 20px;
+  padding: 20px 15px;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.card1:hover {
+  height: 300px;
+}
+.imgBox {
+  position: relative;
+  width: 260px;
+  height: 200px;
+  top: -60px;
+  z-index: 1;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.2);
+}
+.imgBox img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.content1 {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card1:hover .content1 {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.2s;
+}
+.card1 a {
+  text-decoration: none;
+  color: black;
+}
+.content1 span {
+  color: black;
+}
+.content1 span:hover {
+  background-color: rgba(17, 17, 17, 0.103);
+  color: #ccc;
+  border-radius: 2px;
+  transition: 0.8s;
+}
+/* card2 */
+.medeelel .card2 {
+  grid-area: card2;
+  position: relative;
+  max-width: 325px;
+  height: 220px;
+  background: #fff;
+  margin: 30px 20px;
+  padding: 20px 15px;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.card2:hover {
+  height: 300px;
+}
+.card2:hover .content1 {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.2s;
+}
+.card2 a {
+  text-decoration: none;
+  color: black;
+}
+/* card3 */
+.medeelel .card3 {
+  grid-area: card3;
+  position: relative;
+  max-width: 325px;
+  height: 220px;
+  background: #fff;
+  margin: 30px 20px;
+  padding: 20px 15px;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.card3:hover {
+  height: 300px;
+}
+.card3:hover .content1 {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.2s;
+}
+.card3 a {
+  text-decoration: none;
+  color: black;
+}
+/* card4 */
+.medeelel .card4 {
+  grid-area: card4;
+  position: relative;
+  max-width: 325px;
+  height: 220px;
+  background: #fff;
+  margin: 30px 20px;
+  padding: 20px 15px;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.card4:hover {
+  height: 300px;
+}
+.card4:hover .content1 {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.2s;
+}
+.card4 a {
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 1440px) {
+  .container {
+    grid-template-areas:
+      "topnav"
+      "content2"
+      "shalgalt"
+      "footer";
+  }
+  .shalgalt {
+    text-align: center;
+    padding-right: 0;
+  }
+  .shalgalt a {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice</title>
+</head>
+<body>
+    <div class="dice">
+        <img />
+        <input type="button" onclick="RandomDice()" value="Roll" />
+    </div>
+    <div id="result"></div>
+    <script>
+        function RandomDice(){
+            var rand=Math.floor(Math.random() * 6+1);
+            document.getElementById('result').innerHTML="<img src='assets/"+rand+".png'/>"
+        }
+    </script>
+</body>
+</html>

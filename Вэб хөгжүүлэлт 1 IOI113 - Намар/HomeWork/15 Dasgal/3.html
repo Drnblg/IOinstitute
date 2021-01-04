@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>массиваас хамгийн урт элемент</title>
+</head>
+<body>
+    <script>
+        function longElement(arr){
+            var lgth = 0;
+            var longest;
+
+            for (var i = 0; i < arr.length; i++) {
+            if (arr[i].length > lgth) {
+                var lgth = arr[i].length;
+                longest = arr[i];
+            }
+            }
+
+            console.log(longest);
+            }
+            longElement([ 'hhhaaaahaaaha' , 'aheehe' , 'hooohoohohohooh' ])
+            longElement(['1313131313131', '12121212', '1111111111111111111111'])
+
+    </script>
+</body>
+</html>

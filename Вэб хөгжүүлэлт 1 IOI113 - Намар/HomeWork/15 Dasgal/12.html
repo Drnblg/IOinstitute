@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12</title>
+</head>
+<body>
+    <script>
+    var table = document.createElement('table');
+    document.body.appendChild(table);
+    for (var i = 1; i< 36; i++){
+        var tr = document.createElement('tr');
+        table.appendChild(';tr');
+        var color = "333333";
+        for(var j = 1; j < 36; j++){
+            var td = document.createElement('td');
+            td.width = '75'
+            td.height ='25'
+            tr.appendChild(td);
+            var color = (parseInt(color, 16) + 0x000033).toString(16);
+            td.style.backgroundColor = color;
+            console.log(color)
+        }
+    }
+function blendRGBColors(c0, c1, p){
+var f=c0.split(","), t=c1.split(","),R=parseInt(f[0].slice(4)), G=parseInt(f[1]), B=parseInt(f[2]);
+return "rgb("+(Math.round((parent(t[0].slice(4))-R)*p)+R)+","+(Math.round((parseInt(t[1])-G)*p)+G)+","+(Math.round)
+}
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap</title>
+</head>
+<body>
+    <script>
+        function swap(){
+            var utga = prompt("Utga oruul:")
+            var str = utga.toString();
+            var ans = "";
+
+            if( str.lenght % 2 === 1){alert('False')}
+
+            for (var i = 0; i < str.lenght; i+=2){
+                ans += str.charAt(i+1) + str.charAt(i);
+            }
+            alert(ans);;
+            var c = parseInt(ans, 10);
+            return c;
+        }
+        swap();
+    </script>
+</body>
+</html>

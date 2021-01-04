@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee English: Сорил</title>
+    <link rel="icon" href="../bee.png" sizes="any" type="image/svg+xml"> 
+    <link rel="stylesheet" href="exam.css">
+</head>
+<body>
+
+      <script src="../app.js"></script>
+    <div class="container">
+        <div class="topnav">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <img src="logo bee2.png" class="img">
+        </div>
+         <div class="content">
+            
+            <div class="form">
+                <div class="panel">
+                    <img src="undraw_exams_g4ow.svg" class="image" alt="" />
+                </div>
+            </div>
+
+            <div class="home-box custom-box">
+                <h3>Quiz нийт 30 асуулт</h3>
+                <p>Нийт асуултын тоо: <span class="total-question"></span></p>
+                <button type="button" class="btn" onclick="startQuiz()">Эхлэх</button>
+            </div>
+            <div class="quiz-box custom-box hide">
+                <div class="quistion-number">
+                   
+                </div>
+                <div class="quistion-text">
+                   
+                </div>
+                <div class="option-container">
+                    
+                </div>
+                <div class="next-quistion-btn">
+                    <button type="button" class="btn" onclick="next()">Дараагийн</button>
+                </div>
+                <div class="answer-indicator">
+                    
+                </div>
+            </div>
+            <div class="result-box custom-box hide">
+                <h1>Шалгалтын хариу</h1>
+                <table>
+                    <tr>
+                        <td>Нийт асуулт</td>
+                        <td><span class="total-quistion"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Нийт хийсэн</td>
+                        <td><span class="total-attempt"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Зөв хийсэн</td>
+                        <td><span class="total-correct"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Буруу хийсэн</td>
+                        <td><span class="total-wrong"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Хувиар</td>
+                        <td><span class="percentage"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Нийт оноо</td>
+                        <td><span class="total-score"></span></td>
+                    </tr>
+                </table>
+                <a href="../Surgalt/surgalt.html"> <button type="button" class="btn">Буцах</button></a>
+            </div>
+            
+         </div>
+         <div class="footer">
+            <h2>Copyright &copy; Bee English</h2>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>

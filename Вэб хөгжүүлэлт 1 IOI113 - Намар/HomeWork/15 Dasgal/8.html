@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+var udur = prompt("Year/Month/Day Oruulna uu")
+function Weekend(){
+  var isWeekend = function(date){
+    var date = new Date(udur);
+    if(date.getDay()==6 || date.getDay() == 0){
+      return "weekend"
+    }
+    else{
+      return "weekday"
+    }
+  }
+  alert(isWeekend(date))
+}
+
+
+
+// var ftest = {date:'2015-02-0',start:1,end:7};
+// var ltest = {date:'2015-02-2',start:2,end:8};
+// var f = 'YYYY-MM-DD';
+// for(var z=ftest.start; z<=ftest.end; ++z) {
+//   var start = moment(ftest.date + z);
+//   for(var y=ltest.start; y<=ltest.end; ++y) {
+//     var end = moment(ltest.date + y);
+//     var wd = workday_count(start,end);
+//     console.log('from: '+start.format(f),'to: '+end.format(f),'is '+wd+' workday(s)');
+//   }
+// }
+    </script>
+</body>
+</html>
