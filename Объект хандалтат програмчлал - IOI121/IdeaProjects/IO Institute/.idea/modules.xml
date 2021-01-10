@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/IO Institute.iml" filepath="$PROJECT_DIR$/IO Institute.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PuzzleTicTacTo/PuzzleTicTacTo.iml" filepath="$PROJECT_DIR$/PuzzleTicTacTo/PuzzleTicTacTo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Quiz/Quiz.iml" filepath="$PROJECT_DIR$/Quiz/Quiz.iml" />
+    </modules>
+  </component>
+</project>
